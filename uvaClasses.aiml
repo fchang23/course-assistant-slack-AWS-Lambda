@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0.1">
+
+
+<category>
+ <pattern>HELLO</pattern>
+ <template>
+   <random>
+    <li>Hi, human !</li>
+    <li>Hello UVA student !</li>
+   </random>
+ </template>
+</category>
+
+<category>
+<pattern>WHAT TIME IS IT</pattern>
+<template>The local time is: <system>date</system></template>
+</category>
+
+<category>
+<pattern>THIS IS FOR TEST</pattern>
+<template>test successfully!</template>
+</category>
+
+<category>
+ <pattern>WHEN DOES * IN * MEET</pattern>
+ <template><system>python when_class.py <star index="1"/> <star index="2"/></system></template>
+</category>
+
+<category>
+ <pattern>HOW MANY AVAILABLE SEATS FOR * IN * </pattern>
+ <template><system>python available_seats.py <star index="1"/> <star index="2"/></system> seats left</template>
+</category>
+
+<category>
+ <pattern>WHAT IS THE COURSE TYPE OF * IN * </pattern>
+ <template><system>python class_type.py <star index="1"/> <star index="2"/></system></template>
+</category>
+
+</aiml>
